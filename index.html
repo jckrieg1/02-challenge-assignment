@@ -10,49 +10,44 @@
 
 <body>
     <section class="header">
-    <h1>Joey Krieger</h1>
+    <h1 id="name">Joey Krieger</h1>
     <nav id="menu">
         <ul>
-            <a href="">About Me</a>
-            <a href="">Portfolio</a>
-            <!-- Why isn't contact link working? -->
-            <a href="">Contact</a>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
     </nav>
     </section>
 
     <main>
-        <section class="content">
+        <section class="content" id="about-me">
           <h2>About Me</h2>
-          <!-- why isn't image showing up? -->
-          <img src="download-1.jpg" alt="place holder image">
-          <!-- Why does only div tag work and not p tag? -->
-           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla culpa provident rem assumenda omnis asperiores voluptas debitis perferendis illum quod nobis laudantium ipsum, sapiente magni possimus corrupti unde. Maiores, fugiat.
-           </div>
+          <img src="IMG_4031.jpg" id="selfie" alt="headshot of Joey">
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error beatae doloribus delectus odio, minus eligendi hic culpa. Inventore sint magnam nesciunt placeat beatae perferendis illo. Dolorem autem voluptatibus pariatur.</div>
         </section>
-        <section class="content">
+        <section class="content" id="portfolio">
           <h2>My Portfolio</h2>
-          <img src="download-1.jpg" alt="place holder image">
-            <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestias inventore veniam nihil sapiente? Cum natus, sed nulla animi ducimus reprehenderit modi molestiae blanditiis aut aliquam, tenetur est commodi vel?
-            </div>
+          <div class="inline">
+          <a href="https://www.google.com"><h3>Website One</h3><img id="port-img" src="under-construction-10012274.jpg" alt="under contruction"></a>
+          </div>
+          <div class="inline">
+          <a href="https://www.google.com"><h3>Website Two</h3><img id="port-img" src="under-construction-10012274.jpg" alt="under contruction"></a>
+          </div>
+          <div class="inline">
+          <a href="https://www.google.com"><h3>Website Three</h3><img id="port-img" src="under-construction-10012274.jpg" alt="under contruction"></a>
+          </div>
         </section>
     </main>
 
     <footer>
-        <section class="footer">
-            <h2>Contact</h2>
-        <form>
-        <form class="contact-form">
-        <label>Name</label>
-         <input type="text" name="name" placeholder="John Smith">
-        <Label>Email</Label>
-         <input type="text" name="email" placeholder="example@example.com">
-        <label>Message</label>
-        <textarea name="message" placeholder="Type your message here"></textarea>
-        <button type="submit">Send</button>
-        </form>
+        <section class="footer" id="footer"> 
+            <h2 id="contact">Contact</h2>
+            <div>
+             Email: <a href="mailto:joeyck101@gmail.com">joeyck101@gmail.com</a>
+             Phone: 507-271-7419
+             LinkedIn: 012345
+            </div>
         </section>
     </footer>
 </body>
